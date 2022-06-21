@@ -1,0 +1,42 @@
+Watching for file changes with StatReloader
+[21/Jun/2022 15:58:59] "GET / HTTP/1.1" 200 2013
+[21/Jun/2022 15:58:59] "GET /static/css/style.css HTTP/1.1" 304 0
+[21/Jun/2022 16:20:13] "GET / HTTP/1.1" 200 2013
+[21/Jun/2022 16:20:13] "GET /static/css/style.css HTTP/1.1" 304 0
+[21/Jun/2022 16:24:58] "GET / HTTP/1.1" 200 2013
+/Users/majinwoo/Desktop/final-term-project/mysite/mysite/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2022 - 15:58:48
+Django version 4.0.5, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Traceback (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/Users/majinwoo/venvs/mysite/lib/python3.8/site-packages/django/core/management/__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "/Users/majinwoo/venvs/mysite/lib/python3.8/site-packages/django/core/management/__init__.py", line 440, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/Users/majinwoo/venvs/mysite/lib/python3.8/site-packages/django/core/management/base.py", line 414, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/Users/majinwoo/venvs/mysite/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 74, in execute
+    super().execute(*args, **options)
+  File "/Users/majinwoo/venvs/mysite/lib/python3.8/site-packages/django/core/management/base.py", line 460, in execute
+    output = self.handle(*args, **options)
+  File "/Users/majinwoo/venvs/mysite/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 111, in handle
+    self.run(**options)
+  File "/Users/majinwoo/venvs/mysite/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 118, in run
+    autoreload.run_with_reloader(self.inner_run, **options)
+  File "/Users/majinwoo/venvs/mysite/lib/python3.8/site-packages/django/utils/autoreload.py", line 680, in run_with_reloader
+    start_django(reloader, main_func, *args, **kwargs)
+  File "/Users/majinwoo/venvs/mysite/lib/python3.8/site-packages/django/utils/autoreload.py", line 650, in start_django
+    ensure_echo_on()
+  File "/Users/majinwoo/venvs/mysite/lib/python3.8/site-packages/django/utils/autoreload.py", line 95, in ensure_echo_on
+    if not termios or not sys.stdin.isatty():
+AttributeError: 'NoneType' object has no attribute 'isatty'
+Watching for file changes with StatReloader
