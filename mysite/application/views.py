@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
 def post_list(request):
-    return render(request, 'application/post_list.html', {})
+    return render(request, 'application/index.html', {})
